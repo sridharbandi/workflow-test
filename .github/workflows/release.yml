@@ -12,7 +12,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: "Maven Deploy"
-          run: mvn clean package
+        run: mvn clean package
       - name: Build
         run: echo ${{ github.sha }} > Release.txt
       - name: Test
